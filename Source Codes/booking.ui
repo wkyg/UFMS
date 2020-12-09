@@ -1,0 +1,3599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Booking</class>
+ <widget class="QMainWindow" name="Booking">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>University Faclilities Management System (UFMS)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="userLabel">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current Session:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_logout">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LOGOUT</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="currentuser_lbl">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>USERNAME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="copyright">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>570</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>© SLAUATRON 2019.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="db_lbl">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>22</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_return">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RETURN</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frameuser">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>45</y>
+      <width>781</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>18</y>
+       <width>381</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QGroupBox" name="time1hourbox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>361</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Booking Time</string>
+      </property>
+      <widget class="Line" name="line_32">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>51</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_33">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_34">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>71</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_35">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>91</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_36">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>111</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_37">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>131</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_38">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>151</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_39">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>171</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8am">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>41</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>0800 ~ 0900</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_9am">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>61</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0900 ~ 1000</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_10am">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>79</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1000 ~ 1100</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_11am">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>101</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1100 ~ 1200</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_12pm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1200 ~ 1300</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_1pm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>141</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1300 ~ 1400</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_2pm">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>161</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1400 ~ 1500</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_3pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>41</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1500 ~ 1600</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_4pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>61</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1600 ~ 1700</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_5pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>79</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1700 ~ 1800</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_6pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>101</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1800 ~ 1900</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_7pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>120</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1900 ~ 2000</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>141</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2000 ~ 2100</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_9pm">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>161</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2100 ~ 2200</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_46">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>311</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_40">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>41</y>
+         <width>20</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_wholeday">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>179</y>
+         <width>361</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Book for WHOLE DAY</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_42">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>191</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <zorder>line_33</zorder>
+      <zorder>line_32</zorder>
+      <zorder>line_34</zorder>
+      <zorder>line_37</zorder>
+      <zorder>btn_8am</zorder>
+      <zorder>btn_9am</zorder>
+      <zorder>btn_10am</zorder>
+      <zorder>btn_12pm</zorder>
+      <zorder>btn_1pm</zorder>
+      <zorder>line_35</zorder>
+      <zorder>line_36</zorder>
+      <zorder>line_38</zorder>
+      <zorder>line_39</zorder>
+      <zorder>btn_11am</zorder>
+      <zorder>btn_2pm</zorder>
+      <zorder>btn_3pm</zorder>
+      <zorder>btn_4pm</zorder>
+      <zorder>btn_5pm</zorder>
+      <zorder>btn_6pm</zorder>
+      <zorder>btn_7pm</zorder>
+      <zorder>btn_8pm</zorder>
+      <zorder>btn_9pm</zorder>
+      <zorder>line_46</zorder>
+      <zorder>line_40</zorder>
+      <zorder>btn_wholeday</zorder>
+      <zorder>line_42</zorder>
+     </widget>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>361</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">selection-background-color: qlineargradient(spread:pad, x1:0.624591, y1:0.647, x2:0, y2:0, stop:0 rgba(31, 180, 214, 255), stop:1 rgba(183, 183, 183, 255));
+
+
+</string>
+      </property>
+      <property name="selectedDate">
+       <date>
+        <year>2019</year>
+        <month>8</month>
+        <day>21</day>
+       </date>
+      </property>
+      <property name="minimumDate">
+       <date>
+        <year>2019</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+      <property name="gridVisible">
+       <bool>true</bool>
+      </property>
+      <property name="horizontalHeaderFormat">
+       <enum>QCalendarWidget::ShortDayNames</enum>
+      </property>
+      <property name="verticalHeaderFormat">
+       <enum>QCalendarWidget::NoVerticalHeader</enum>
+      </property>
+      <property name="navigationBarVisible">
+       <bool>true</bool>
+      </property>
+      <property name="dateEditEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_41">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>450</y>
+        <width>20</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="time2hourbox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>361</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Booking Time</string>
+      </property>
+      <widget class="Line" name="line_44">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_45">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>71</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_48">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>111</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_50">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>151</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8am_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>41</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>0800 ~ 1000</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_10am_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>79</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1000 ~ 1200</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_12pm_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1200 ~ 1400</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_2pm_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1400 ~ 1600</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_4pm_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1600 ~ 1800</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_6pm_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>80</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1800 ~ 2000</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8pm_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>120</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2000 ~ 2200</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_52">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>311</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_53">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>41</y>
+         <width>20</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_wholeday_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>160</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Book for WHOLE DAY</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_54">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>191</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="time3hourbox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>361</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Booking Time</string>
+      </property>
+      <widget class="Line" name="line_47">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_49">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>81</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_55">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>130</y>
+         <width>361</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8am_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>0800 ~ 1100</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_11am_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>90</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1100 ~ 1400</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_2pm_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>191</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1400 ~ 1700</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_5pm_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1700 ~ 2000</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8pm_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2000 ~ 2200</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_57">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>41</y>
+         <width>20</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_wholeday_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>140</y>
+         <width>171</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Book for WHOLE DAY</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_56">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>361</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="time4hourbox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>361</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Booking Time</string>
+      </property>
+      <widget class="Line" name="line_51">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_58">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_8am_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>191</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>0800 ~ 1200</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_12pm_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>191</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1200 ~ 1600</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_4pm_4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>171</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1600 ~ 2000</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_60">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>41</y>
+         <width>20</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_wholeday_4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>120</y>
+         <width>171</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Book for WHOLE DAY</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_61">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>361</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="timecustomize">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>361</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Booking Time</string>
+      </property>
+      <widget class="Line" name="line_59">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_65">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>361</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>70</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Preferred Time :</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="timefromcmbbox">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>70</y>
+         <width>51</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>0800</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0900</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1100</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1200</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1300</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1400</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1500</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1600</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1700</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1800</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1900</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2100</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="timetocmbbox">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>70</y>
+         <width>51</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>70</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>~</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>*Date Range    :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>180</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>*Field is optional.</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEditfrom">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>100</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="displayFormat">
+        <string>yyyy-MM-dd</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>130</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>*Preferred Day:</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEditto">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>100</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="displayFormat">
+        <string>yyyy-MM-dd</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>100</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>~</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="daycmbbox">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>130</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sunday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Monday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tuesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wednesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thursday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Friday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Saturday</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="btn_customconfirm">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>170</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CONFIRM</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_customreset">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>170</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>RESET</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushbtn_">
+     <property name="geometry">
+      <rect>
+       <x>232</x>
+       <y>0</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Today's Date</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="confirmation">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>468</y>
+       <width>781</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <widget class="QLabel" name="facselected_lbl">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>0</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxfac_lbl">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>15</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_confirm">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CONFIRM</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="selecteddis_lbl_2">
+      <property name="geometry">
+       <rect>
+        <x>386</x>
+        <y>15</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max Amount for Booking:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="selecteddis_lbl_3">
+      <property name="geometry">
+       <rect>
+        <x>386</x>
+        <y>30</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Amount Needed             : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="selecteddis_lbl">
+      <property name="geometry">
+       <rect>
+        <x>386</x>
+        <y>0</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Selected Venue/Facilities:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>30</y>
+        <width>42</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_reset">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET ALL</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dateselectLabel">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>0</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Selected Date:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="timeselectedLabel">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>13</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dateselectedLabel">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>-2</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="timeselectLabel">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>15</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Selected Time:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_reset_2">
+      <property name="geometry">
+       <rect>
+        <x>368</x>
+        <y>50</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET Date and Time</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_reset_3">
+      <property name="geometry">
+       <rect>
+        <x>484</x>
+        <y>50</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET Venue/Facilities</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dayselectLabel">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Preferred Day:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dayselectedLabel">
+      <property name="geometry">
+       <rect>
+        <x>82</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>392</x>
+       <y>18</y>
+       <width>391</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_venue">
+      <attribute name="title">
+       <string>Venue</string>
+      </attribute>
+      <widget class="QPushButton" name="btn_artroom">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>122</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Art Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0004_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>100</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0013_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>220</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0005_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>100</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0021_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>340</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_audioroom">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>122</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Acoustic Audio
+ Record Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0015_lbl">
+       <property name="geometry">
+        <rect>
+         <x>346</x>
+         <y>220</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0018_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>280</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0014_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>220</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>342</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>296</x>
+         <y>102</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_lecturehall">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>2</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Lecture Hall</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0016_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>280</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0001_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>40</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_videoeditroom">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>182</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Video Editing
+ Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0009_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>160</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>342</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0012_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>220</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>42</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0011_lbl">
+       <property name="geometry">
+        <rect>
+         <x>346</x>
+         <y>160</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_volleycourt">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>302</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Volleyball Court</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>198</x>
+         <y>282</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_pclab">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>62</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>PC Laboratory</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>198</x>
+         <y>342</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0010_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>160</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>162</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0019_lbl">
+       <property name="geometry">
+        <rect>
+         <x>344</x>
+         <y>280</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0002_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>40</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_field">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>302</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Field</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_pool">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>242</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Swimming Pool</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_oslab">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>2</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>OS Laboratory</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_plaza">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>182</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Plaza</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>342</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>198</x>
+         <y>162</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_skatepark">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>302</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Skatepark</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_tenniscourt">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>242</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Tennis Court</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_lectureroom">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>2</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Lecture Room</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_gym">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>302</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Gym</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>282</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0007_lbl">
+       <property name="geometry">
+        <rect>
+         <x>346</x>
+         <y>100</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>102</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0006_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>100</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_greensroom">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>122</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Green Screen
+ Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0008_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>160</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>162</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_tutorialroom">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>2</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Tutorial Room</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_eventhall">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>182</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Event Hall</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_basketballcourt">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>242</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Basketball Court</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>282</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>296</x>
+         <y>162</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>222</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>222</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0003_lbl">
+       <property name="geometry">
+        <rect>
+         <x>344</x>
+         <y>40</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_explab">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>62</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Experimental 
+Laboratory</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_engineerlab">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>62</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Engineering 
+Laboratory</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>296</x>
+         <y>42</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0000_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>40</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_badmintoncourt">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>242</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Badminton Court</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>198</x>
+         <y>102</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0022_lbl">
+       <property name="geometry">
+        <rect>
+         <x>248</x>
+         <y>340</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>42</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>296</x>
+         <y>222</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_meetingroom">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>62</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Meeting Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>102</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_vidshootroom">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>122</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Video Shooting
+ Room</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0017_lbl">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>280</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_corridor">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>182</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Corridor</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0020_lbl">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>340</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>42</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0023_lbl">
+       <property name="geometry">
+        <rect>
+         <x>344</x>
+         <y>340</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>198</x>
+         <y>222</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>294</x>
+         <y>282</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_fac">
+      <attribute name="title">
+       <string>Facilities</string>
+      </attribute>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>40</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0025_lbl">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>38</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0030_lbl">
+       <property name="geometry">
+        <rect>
+         <x>245</x>
+         <y>98</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_bannerstand">
+       <property name="geometry">
+        <rect>
+         <x>193</x>
+         <y>60</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Banner Stand</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>100</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_waterwiper">
+       <property name="geometry">
+        <rect>
+         <x>193</x>
+         <y>120</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Water Wiper</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0029_lbl">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>98</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_chair">
+       <property name="geometry">
+        <rect>
+         <x>288</x>
+         <y>0</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Chair</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_ladder">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>60</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Ladder</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0027_lbl">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>38</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>101</x>
+         <y>40</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0024_lbl">
+       <property name="geometry">
+        <rect>
+         <x>57</x>
+         <y>38</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_waterbucket">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>120</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Water Bucket</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>40</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0026_lbl">
+       <property name="geometry">
+        <rect>
+         <x>245</x>
+         <y>38</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>160</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_broom">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>0</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Broom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0028_lbl">
+       <property name="geometry">
+        <rect>
+         <x>57</x>
+         <y>98</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>101</x>
+         <y>160</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0033_lbl">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>158</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>160</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0031_lbl">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>98</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_waterpipe">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>120</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Water Pipe</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0032_lbl">
+       <property name="geometry">
+        <rect>
+         <x>57</x>
+         <y>158</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fac0034_lbl">
+       <property name="geometry">
+        <rect>
+         <x>245</x>
+         <y>158</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>100</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_queuebarrier">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>60</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Queue Barrier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>100</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>101</x>
+         <y>100</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_mop">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>0</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Mop</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_table">
+       <property name="geometry">
+        <rect>
+         <x>193</x>
+         <y>0</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Table</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_bucket">
+       <property name="geometry">
+        <rect>
+         <x>288</x>
+         <y>60</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Bucket</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>40</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Available: </string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="datedisplay">
+     <property name="geometry">
+      <rect>
+       <x>303</x>
+       <y>2</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>:  DATE</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="timecmbBox">
+     <property name="geometry">
+      <rect>
+       <x>85</x>
+       <y>270</y>
+       <width>281</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>1 Hour(s)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 Hour(s)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3 Hour(s)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4 Hour(s)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Customize</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>781</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="oframe1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>20</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="oframe4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>781</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="oframe3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>10</y>
+      <width>20</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="oframe2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frameadmin">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>45</y>
+      <width>781</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="datedisplay_2">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>2</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>date</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="datedisplaylbl2">
+     <property name="geometry">
+      <rect>
+       <x>627</x>
+       <y>2</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Today's Date:</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="table_availability">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>771</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>150</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>150</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameadmin2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>791</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="table_bookings">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>30</y>
+       <width>771</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>94</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>94</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="datedisplaylbl2_2">
+     <property name="geometry">
+      <rect>
+       <x>622</x>
+       <y>7</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Today's Date:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="datedisplay_3">
+     <property name="geometry">
+      <rect>
+       <x>695</x>
+       <y>7</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>date</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="timecurrentLabel">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>45</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current Time   :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timedisplay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>46</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CLOCK</string>
+    </property>
+   </widget>
+   <zorder>userLabel</zorder>
+   <zorder>btn_logout</zorder>
+   <zorder>currentuser_lbl</zorder>
+   <zorder>copyright</zorder>
+   <zorder>db_lbl</zorder>
+   <zorder>btn_return</zorder>
+   <zorder>line_2</zorder>
+   <zorder>oframe1</zorder>
+   <zorder>oframe4</zorder>
+   <zorder>oframe3</zorder>
+   <zorder>oframe2</zorder>
+   <zorder>frameadmin2</zorder>
+   <zorder>timecurrentLabel</zorder>
+   <zorder>timedisplay</zorder>
+   <zorder>frameadmin</zorder>
+   <zorder>frameuser</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

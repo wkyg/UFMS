@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>currentuser.txt</file>
+        <file>ufms.db</file>
+    </qresource>
+</RCC>
