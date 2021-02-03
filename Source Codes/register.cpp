@@ -25,7 +25,7 @@ Register::Register(QWidget *parent) : QDialog(parent), ui(new Ui::Register)
     ui->error_lbl_4->hide();
     ui->error_lbl_5->hide();
     ui->error_lbl_6->hide();
-    QMovie *movie = new QMovie("G:/Degree/Sem3(1910)/TSE2101 - Software Engineering Fundamentals/Assignments/Programming/Combine/Combine/checkexisting.gif");
+    QMovie *movie = new QMovie("C:/Users/Kelvi/Desktop/VV-UFMS/Source Codes/checkexisting.gif");
     movie->start();
 
     MainWindow m;

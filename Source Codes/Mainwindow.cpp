@@ -62,7 +62,7 @@ void MainWindow::on_btn_Register_clicked()
 
 bool MainWindow::dbopened(){
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("G:/Degree/Sem3(1910)/TSE2101 - Software Engineering Fundamentals/Assignments/Programming/Combine/Combine/ufms.db");
+    db.setDatabaseName("C:/Users/Kelvi/Desktop/VV-UFMS/Source Codes/ufms.db");
     if (!db.open()){return false;}
     else{return true;}
 }
@@ -90,7 +90,7 @@ void MainWindow::on_btn_Login_clicked()
             ui->error_lbl->show();}
         if (username == user && password == pass){
             QMessageBox::information(this, "Success", "Login Success!");
-            QFile currentuser("G:/Degree/Sem3(1910)/TSE2101 - Software Engineering Fundamentals/Assignments/Programming/Combine/Combine/currentuser.txt");
+            QFile currentuser("C:/Users/Kelvi/Desktop/VV-UFMS/Source Codes/currentuser.txt");
             currentuser.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::ReadWrite | QIODevice::Truncate);
             QTextStream stream(&currentuser);
             stream << username << " " <<accid;

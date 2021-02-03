@@ -38,7 +38,7 @@ Manage::Manage(QWidget *parent) :QMainWindow(parent),ui(new Ui::Manage)
 }
 
 void Manage::currentsession(){
-    QFile currentuser("G:/Degree/Sem3(1910)/TSE2101 - Software Engineering Fundamentals/Assignments/Programming/Combine/Combine/currentuser.txt");
+    QFile currentuser("C:/Users/Kelvi/Desktop/VV-UFMS/Source Codes/currentuser.txt");
     currentuser.open(QFile::ReadOnly | QFile::Text);
     QTextStream in(&currentuser);
     in>>username>>accid;

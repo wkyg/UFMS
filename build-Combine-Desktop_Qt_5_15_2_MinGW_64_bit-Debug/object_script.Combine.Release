@@ -1,0 +1,12 @@
+release/booking.o
+release/main.o
+release/mainwindow.o
+release/manage.o
+release/register.o
+release/resetpw.o
+release/qrc_images.o
+release/moc_booking.o
+release/moc_mainwindow.o
+release/moc_manage.o
+release/moc_register.o
+release/moc_resetpw.o
